@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* * {
+  outline: 1px solid blue;
+} */
+body {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ceddf4;
+  background-image: url(../images/background-images1.png);
+}
+@media screen and (max-width: 590px) {
+  body {
+    background-image: url(../images/background-images2.png);
+  }
+}
+.container {
+  width: 1088px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 590px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header .fixed {
+  background-image: url(../images/images1.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 1218px;
+  height: 317px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+@media screen and (max-width: 590px) {
+  header .fixed {
+    background-image: url(../images/images17.png);
+    /* height: 100vh; */
+    height: 190px;
+    width: 100%;
+  }
+}
+header .fixed .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 958px;
+  height: 68px;
+  padding-left: 105px;
+}
+@media screen and (max-width: 590px) {
+  header .fixed .logo {
+    padding-left: 0;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+header .fixed .logo img {
+  width: 245px;
+}
+header .fixed .logo div {
+  display: flex;
+}
+header .fixed .logo .address {
+  font-size: 16px;
+  padding-right: 19px;
+}
+header .fixed .logo .tele {
+  font-size: 25px;
+}
+header .fixed .logo .icon1 {
+  display: none;
+}
+@media screen and (max-width: 590px) {
+  header .fixed .logo img {
+    width: 156px;
+  }
+  /* header .fixed .logo div { */
+  /* background-color: #3d3c3c;
+    width: 351px;
+    height: 55px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%); */
+  /* } */
+  header .fixed .logo .address {
+    /* padding-top: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 22px; */
+    display: none;
+  }
+  header .fixed .logo .tele {
+    /* padding-top: 27px;
+    font-size: 16px;
+    color: #fff; */
+    display: none;
+  }
+  header .fixed .logo .icon1 {
+    /* display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 23px;
+    margin-left: 6px; */
+    display: none;
+  }
+}
+header .fixed nav ul {
+  width: 936px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 24px;
+  padding-top: 12px;
+  padding-left: 140px;
+}
+@media screen and (max-width: 590px) {
+  header .fixed nav ul {
+    font-size: 11px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+  header .fixed nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3);
+    line-height: 15px;
+  }
+}
+.navItem a {
+  text-decoration: none;
+  color: #053807;
+}
+.navItem a:hover {
+  text-decoration: underline;
+  color: #444;
+}
+@media screen and (max-width: 590px) {
+  .navItem a:hover {
+    display: none;
+  }
+}
+
+main .mainContent {
+  background-image: url(../images/images18.png);
+  background-repeat: no-repeat;
+  margin-left: 120px;
+  width: 841.6478px;
+  height: 634.2943px;
+}
+main .mainContent h1 {
+  font-size: 72px;
+  padding-top: 284px;
+  margin-left: 300px;
+}
+main .newsContent {
+  background-color: #fff;
+  width: 1000px;
+  height: 514px;
+  border-radius: 55px;
+  margin-left: 50px;
+  margin-top: 0px;
+}
