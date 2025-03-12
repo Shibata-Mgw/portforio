@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* * {
+  outline: 1px solid blue;
+} */
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+}
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+@media screen and (max-width: 500px) {
+.container {
+  max-width: 390px;
+ }
+}
+h1 {
+    background-color: #efefef;
+    width: 1366px;
+    height: 40px;
+  }
+  h1 .text1 {
+    width: 700px;
+    font-size: 14px;
+    padding-top: 14px;
+    padding-left: 200px;
+  }
+@media screen and (max-width: 500px) {
+ h1 {
+  display: none;
+ }
+}
